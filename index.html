@@ -194,13 +194,13 @@ export default function App() {
               <div className="relative z-10 bg-white rounded-r-2xl rounded-l-md shadow-2xl border-l-8 border-indigo-900 overflow-hidden aspect-[2/3] flex items-center justify-center bg-slate-100">
                 {!imageError ? (
                   <img 
-                    src="cover.jpeg" 
+                    src="cover.jpg" 
                     alt="The Istanbul Method by Faramarz Kowsari - Official Book Cover" 
                     className="w-full h-full object-cover"
                     onError={() => setImageError(true)}
                   />
                 ) : (
-                  // Fallback CSS Cover if cover.jpeg is not found
+                  // Fallback CSS Cover if cover.jpg is not found
                   <div className="w-full h-full bg-gradient-to-b from-slate-800 to-slate-900 p-6 flex flex-col items-center justify-center text-center">
                     <h2 className="text-2xl font-serif font-bold text-white mb-2">The Istanbul Method</h2>
                     <h3 className="text-sm text-slate-300 tracking-widest uppercase mb-8">For IELTS & TOEFL</h3>
